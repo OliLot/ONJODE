@@ -117,6 +117,8 @@ please cite our papers:
         url={https://openreview.net/forum?id=JFKR3WqwyXR}
     }
     ```
+
+- TO BE ADDED: Operator Neural Jump ODEs - An Extension to Function Spaces
   
 
 
@@ -783,5 +785,31 @@ python run.py --params=params_list_NJODE1_physionet --NB_JOBS=32 --NB_CPUS=1 --f
   To fix this, one can simply rename the columns in the csv files to the new naming.
   Moreover, when loading old models where `which_eval_loss` was specified, one has to change this to `which_val_loss` in the saved model_overview.csv file. This can be done with overwriting params option.
 
+--------------------------------------------------------------------------------
+# Instructions for Running Experiments of Operator Neural Jump ODEs
+
+## Dataset Generation
+go to the source directory:
+```sh
+cd NJODE
+```
+
+generate the standard BrownianCosine dataset (refer to config_ONJODE for other options):
+```sh
+python data_utils.py --dataset_name=BrownianCosine --dataset_params=brownian_cos_dict
+```
+
+## Training & Testing
+go to the source directory:
+```sh
+cd NJODE
+```
+
+train models on the standard datasets (BrownianCosine, BrownianLinear, BrownianExpDecay):
+```sh
+python run.py --params=param_dict_1d1d --NB_JOBS=3 --NB_CPUS=1
+```
+
+optionally with --USE_GPU=True, a larger number of CPU cores, or with saved models (view flags above). Refer to config_ONJODE for the adjustable specifications.
 
 
