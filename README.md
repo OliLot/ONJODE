@@ -1,10 +1,12 @@
 # Neural Jump ODEs
+Authors: (NJODE) Florian Krach, Calypso Herrera, Marc Nübel (ONJODE Extension) Oliver Löthgren
 
 This repository is the official implementation of the papers 
 - [Optimal Estimation of Generic Dynamics by Path-Dependent Neural Jump ODEs](https://arxiv.org/abs/2206.14284)
 - [Extending Path-Dependent NJ-ODEs to Noisy Observations and a Dependent Observation Framework](https://openreview.net/forum?id=0T2OTVCCC1) 
 - [Learning Chaotic Systems and Long-Term Predictions with Neural Jump ODEs](https://arxiv.org/abs/2407.18808)
 - [Nonparametric Filtering, Estimation and Classification using Neural Jump ODEs](https://arxiv.org/abs/2412.03271)
+- TO BE ADDED: Operator Neural Jump ODEs - An Extension to Function Spaces
 
 which are part of the series of works on Neural Jump ODEs that started with
 [Neural Jump Ordinary Differential Equations: Consistent Continuous-Time Prediction and Filtering](https://openreview.net/forum?id=JFKR3WqwyXR).
@@ -780,5 +782,6 @@ python run.py --params=params_list_NJODE1_physionet --NB_JOBS=32 --NB_CPUS=1 --f
   This might cause problems when loading old models, where the metric_id-x.csv files use the old column naming.
   To fix this, one can simply rename the columns in the csv files to the new naming.
   Moreover, when loading old models where `which_eval_loss` was specified, one has to change this to `which_val_loss` in the saved model_overview.csv file. This can be done with overwriting params option.
+
 
 
