@@ -1,0 +1,7 @@
+Finite Dimensional NJODE:
+    - DeepLOB: Training on real limit order book data
+    - GRU-ODE-Bayes: Reference model  
+    - latent ODE: Reference model
+
+Operator NJODE:
+    - Not implemented
