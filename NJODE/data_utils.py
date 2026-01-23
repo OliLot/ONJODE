@@ -680,21 +680,16 @@ def create_operator_dataset(
             pass
     
     # Sampling space points
-    if J_custom is False and J_binomial is False: # default: sample each space point as uniform
-        observed_space_points = np.random.random(size=(size[0], size[2], size[3])) # [path, time_points, spatial_grid]
-        observed_space_points = (observed_space_points < J_obs_perc)*1
-        nb_obs_space = np.sum(observed_space_points, axis=2) # [path, time_points]
-    elif J_binomial: # default: binomial for J
+    if J_binomial: # default: binomial for J
         observed_space_points = np.zeros(shape=(size[0], size[2], size[3])) # [path, time_points, spatial_grid]
         nb_obs_space = np.zeros(shape=(size[0], size[2])) # [path, time_points]
         for i in range(size[0]): # each path
-            nr_space_samples = np.random.binomial(size[3], J_obs_perc, size=nb_obs[i]+1) # incl start point
+            nr_space_samples = np.random.binomial(size[3], J_obs_perc, size=nb_obs[i]+1) 
             observed_date_indices = np.where(observed_dates[i,:]==1)[0]
-            for k in range(nb_obs[i]+1): # for each J_i
+            for k in range(nb_obs[i]+1): # for each J_i                       
                 point_samples_idx = space_sampling(nr_space_samples[k])
                 observed_space_points[i, observed_date_indices[k], point_samples_idx] = 1
-                J_k = len(np.unique(point_samples_idx)) # actual number of observed points at time index k
-                nb_obs_space[i, observed_date_indices[k]] = J_k
+        nb_obs_space = np.sum(observed_space_points, axis=2) # sum over spatial grid to get J_is [path, time_points]
     elif J_custom: # NOT IMPLEMENTED: Custom J_i distribution
         # make J_obs_perc in dataset_metadata a vector over the space grid 
         pass
@@ -1423,3 +1418,4 @@ if __name__ == '__main__':
 
 
     pass
+
