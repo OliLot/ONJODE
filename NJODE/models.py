@@ -1346,7 +1346,7 @@ class ONJODE(torch.nn.Module):
                 # evolve all hidden states via NODE
                 h , current_time = self.ode_step(
                     h=h,
-                    current_time=torch.tensor([[current_time]]).expand(nr_hidden_states, 1).to(self.device), 
+                    current_time=current_time, 
                     xi=eval_points, 
                     tau=tau, 
                     delta_t=delta_t_
@@ -3327,5 +3327,6 @@ class NJmodel(NJODE):
             t=torch.cat((tau, current_time - tau), dim=1))
 
         return next_h, current_time
+
 
 
