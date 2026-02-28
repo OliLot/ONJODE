@@ -480,34 +480,6 @@ train NJODE on BM dataset with variance prediction:
 python run.py --params=param_list_BMandVar_U --NB_JOBS=25 --NB_CPUS=1 --first_id=1
 ```
 
-
-
-
-
---------------------------------------------------------------------------------
-# TODOs (delete for public)
-
-- work on randomizedNJODE (as Master thesis?)
-
-
-- work on LOB:
-    - compare also with "DEEP ORDER FLOW IMBALANCE - EXTRACTING ALPHA AT MULTIPLE HORIZONS FROM THE LIMIT ORDER BOOK"??
-    - run retrain on BTC dataset with new classifier models
-    - try to train NJODE on subsampled training data, where on average only every 10th datapoint is available
-      (idea: right now every datapoint is available on the training set s.t. the model alway only predicts 1 step ahead,
-      but when evaluated it has to predict 10 steps ahead. maybe training already with this task makes the model better!?)
-    - philipp harms suggested to use a different notion of time, where time is normalized s.t. the traded volume is approx.
-      constant in this new time
-    - overlapping samples!?
-    - try out to train the classifier on its own after every step (this would yield a better classifier, which might improve the overall training!?)
-
-- other real world datasets (see e.g. "Deep Switching State Space Model (DS3M) for Nonlinear Time Series Forecasting
-  with Regime Switching")
-
-
-  
-
-
 --------------------------------------------------------------------------------
 # Instructions for Running Experiments of Extending Path-Dependent NJ-ODEs to Noisy Observations and a Dependent Observation Framework
 
@@ -674,12 +646,6 @@ python run.py --params=param_list_IO_BMClass --NB_JOBS=16 --NB_CPUS=1 --first_id
 python run.py --plot_paths=plot_paths_IO_BMClass_dict
 ```
 
-
-
-
-
-
-
 --------------------------------------------------------------------------------
 # Instructions for Running Experiments of Neural Jump Ordinary Differential Equations
 
@@ -811,6 +777,7 @@ python run.py --params=param_dict_1d1d --NB_JOBS=3 --NB_CPUS=1
 ```
 
 optionally with --USE_GPU=True, a larger number of CPU cores, or with saved models (view flags above). Refer to config_ONJODE for the adjustable specifications.
+
 
 
 
