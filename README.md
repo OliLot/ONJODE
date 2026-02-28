@@ -1,5 +1,5 @@
 # Neural Jump ODEs
-Authors: (NJODE) Florian Krach, Calypso Herrera, Marc Nübel (ONJODE Extension) Oliver Löthgren
+Authors: (NJODE) Florian Krach, Calypso Herrera, Marc Nübel (ONJODE) Oliver Löthgren
 
 This repository is the official implementation of the papers 
 - [Optimal Estimation of Generic Dynamics by Path-Dependent Neural Jump ODEs](https://arxiv.org/abs/2206.14284)
@@ -811,5 +811,6 @@ python run.py --params=param_dict_1d1d --NB_JOBS=3 --NB_CPUS=1
 ```
 
 optionally with --USE_GPU=True, a larger number of CPU cores, or with saved models (view flags above). Refer to config_ONJODE for the adjustable specifications.
+
 
 
