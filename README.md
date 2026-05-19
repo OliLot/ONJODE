@@ -5,10 +5,8 @@ This repository is the official implementation of the extension to the papers
 - [Learning Chaotic Systems and Long-Term Predictions with Neural Jump ODEs](https://arxiv.org/abs/2407.18808)
 - [Nonparametric Filtering, Estimation and Classification using Neural Jump ODEs](https://arxiv.org/abs/2412.03271)
 
-by Florian Krach, Calypso Herrera, and Marc Nübel to Operator Neural Jump ODEs - from finite to infinite-dimensional space.
-
 which are part of the series of works on Neural Jump ODEs that started with
-[Neural Jump Ordinary Differential Equations: Consistent Continuous-Time Prediction and Filtering](https://openreview.net/forum?id=JFKR3WqwyXR).
+[Neural Jump Ordinary Differential Equations: Consistent Continuous-Time Prediction and Filtering](https://openreview.net/forum?id=JFKR3WqwyXR), to Operator Neural Jump ODEs - from finite to infinite-dimensional space.
 
 The code is based on the [code of the first paper](https://github.com/HerreraKrachTeichmann/NJODE), 
 but was developed further such that it is more user-friendly. 
