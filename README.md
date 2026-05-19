@@ -1,12 +1,11 @@
 # Neural Jump ODEs
-Authors: (NJODE) Florian Krach, Calypso Herrera, Marc Nübel (ONJODE) Oliver Löthgren
-
-This repository is the official implementation of the papers 
+This repository is the official implementation of the extension to the papers 
 - [Optimal Estimation of Generic Dynamics by Path-Dependent Neural Jump ODEs](https://arxiv.org/abs/2206.14284)
 - [Extending Path-Dependent NJ-ODEs to Noisy Observations and a Dependent Observation Framework](https://openreview.net/forum?id=0T2OTVCCC1) 
 - [Learning Chaotic Systems and Long-Term Predictions with Neural Jump ODEs](https://arxiv.org/abs/2407.18808)
 - [Nonparametric Filtering, Estimation and Classification using Neural Jump ODEs](https://arxiv.org/abs/2412.03271)
-- TO BE ADDED: Operator Neural Jump ODEs - An Extension to Function Spaces
+
+by Florian Krach, Calypso Herrera, and Marc Nübel to Operator Neural Jump ODEs - from finite to infinite-dimensional space.
 
 which are part of the series of works on Neural Jump ODEs that started with
 [Neural Jump Ordinary Differential Equations: Consistent Continuous-Time Prediction and Filtering](https://openreview.net/forum?id=JFKR3WqwyXR).
