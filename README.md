@@ -8,7 +8,7 @@ This repository is the official implementation of the extension to the papers
 which are part of the series of works on Neural Jump ODEs that started with
 [Neural Jump Ordinary Differential Equations: Consistent Continuous-Time Prediction and Filtering](https://openreview.net/forum?id=JFKR3WqwyXR), to Operator Neural Jump ODEs - from learning conditional expectations in finite to infinite-dimensional space.
 
-The code and this README is based on the [work on the first paper](https://github.com/HerreraKrachTeichmann/NJODE), 
+The code and this README is based on the [repository from the previous papers](https://github.com/FlorianKrach/PD-NJODE), 
 but was developed further for this setting. 
 All experiments from the first paper can be run with this repo as well (see 
 [Instructions for Neural Jump Ordinary Differential Equations: Consistent Continuous-Time Prediction and Filtering](#instructions-for-running-experiments-of-neural-jump-ordinary-differential-equations)).
