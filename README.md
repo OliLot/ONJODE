@@ -1,4 +1,4 @@
-# Neural Jump ODEs
+# Operator Neural Jump ODEs
 This repository is the official implementation of the extension to the papers 
 - [Optimal Estimation of Generic Dynamics by Path-Dependent Neural Jump ODEs](https://arxiv.org/abs/2206.14284)
 - [Extending Path-Dependent NJ-ODEs to Noisy Observations and a Dependent Observation Framework](https://openreview.net/forum?id=0T2OTVCCC1) 
@@ -6,9 +6,9 @@ This repository is the official implementation of the extension to the papers
 - [Nonparametric Filtering, Estimation and Classification using Neural Jump ODEs](https://arxiv.org/abs/2412.03271)
 
 which are part of the series of works on Neural Jump ODEs that started with
-[Neural Jump Ordinary Differential Equations: Consistent Continuous-Time Prediction and Filtering](https://openreview.net/forum?id=JFKR3WqwyXR), to Operator Neural Jump ODEs - from finite to infinite-dimensional space.
+[Neural Jump Ordinary Differential Equations: Consistent Continuous-Time Prediction and Filtering](https://openreview.net/forum?id=JFKR3WqwyXR), to Operator Neural Jump ODEs - from learning conditional expectations in finite to infinite-dimensional space.
 
-The code is based on the [code of the first paper](https://github.com/HerreraKrachTeichmann/NJODE), 
+The code and this README is based on the [code of the first paper](https://github.com/HerreraKrachTeichmann/NJODE), 
 but was developed further such that it is more user-friendly. 
 All experiments from the first paper can be run with this repo as well (see 
 [Instructions for Neural Jump Ordinary Differential Equations: Consistent Continuous-Time Prediction and Filtering](#instructions-for-running-experiments-of-neural-jump-ordinary-differential-equations)).
@@ -20,8 +20,7 @@ The experiments from the follow-up papers can be run with:
 - [Instructions for Nonparametric Filtering, Estimation and Classification using Neural Jump ODEs](#instructions-for-running-experiments-of-nonparametric-filtering-estimation-and-classification-using-neural-jump-odes)
 
 
-A notebook studying Explainability in the context of NJODEs is available at [Explainability of NJODEs](https://gist.github.com/FlorianKrach/7a610cd88d9739b2f8bbda8455a558b4).  
-The solution is available at [Explainability of NJODEs - Solution](https://gist.github.com/FlorianKrach/51c38e16c6545f8488c05f82926f6aca). (TODO: delete for public) 
+A notebook studying Explainability in the context of NJODEs is available at [Explainability of NJODEs](https://gist.github.com/FlorianKrach/7a610cd88d9739b2f8bbda8455a558b4).
 
 
 ## Requirements
